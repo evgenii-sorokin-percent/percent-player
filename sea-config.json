@@ -5,6 +5,7 @@
   "main": "./server/dist/server.js",
   "output": "./dist/percent-player",
   "disableExperimentalSEAWarning": true,
+  "executable": "/usr/bin/node",
   "assets": {
     "assets/hero-CLDdwZDr.png": "./client/dist/assets/hero-CLDdwZDr.png",
     "assets/index-D64VDMd1.css": "./client/dist/assets/index-D64VDMd1.css",

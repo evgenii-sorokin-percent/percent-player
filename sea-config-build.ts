@@ -2,6 +2,7 @@ import fs from "fs"
 import path from "path"
 import consola from "consola"
 import { fileURLToPath } from "url";
+import type { NodeJsSEAConfiguration } from "./sea-config.types.js";
 
 consola.start("Generating sea-config.json...")
 
@@ -10,14 +11,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const clientDistDirectory = path.join(__dirname, 'client', 'dist')
 const configOutput = path.join(__dirname, 'sea-config.json')
 
-const config = {
+const config: NodeJsSEAConfiguration = {
   "$schema": "./sea-config.schema.json",
   "mainFormat": "module",
   "useCodeCache": true,
   "main": "./server/dist/server.js",
   "output": "./dist/percent-player",
   "disableExperimentalSEAWarning": true,
-  "assets": {} as Record<string, string>
+  "executable": process.execPath,
+  "assets": {}
 };
 
 const getFiles = (directory: string, prefix = '') => {
@@ -30,7 +32,7 @@ const getFiles = (directory: string, prefix = '') => {
     if (entry.isDirectory()) {
       getFiles(fullPath, assetKey)
     } else {
-      config.assets[assetKey] = `./client/dist/${assetKey}`
+      config.assets![assetKey] = `./client/dist/${assetKey}`
     }
   }
 }

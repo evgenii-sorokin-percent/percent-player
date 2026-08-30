@@ -10,7 +10,7 @@
     "build": "pnpm -F server build && pnpm -F client build && pnpm build:sea-config && pnpm build:sea",
     "build:server": "pnpm -F server build",
     "build:client": "pnpm -F client build",
-    "build:sea-config": "node build-sea-config.ts",
+    "build:sea-config": "node sea-config-build.ts",
     "build:sea": "node --build-sea sea-config.json",
     "lint": "pnpm -F server lint && pnpm -F client lint",
     "lint:server": "pnpm -F server lint",
