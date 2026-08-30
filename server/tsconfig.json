@@ -38,5 +38,5 @@
     "moduleDetection": "force",
     "skipLibCheck": true
   },
-"exclude": ["rolldown.config.ts", "node_modules"]
+  "exclude": ["rolldown.config.ts", "node_modules"]
 }
