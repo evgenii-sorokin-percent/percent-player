@@ -39,5 +39,8 @@ const getFiles = (directory: string, prefix = '') => {
 
 getFiles(clientDistDirectory)
 
+if (!fs.existsSync("dist")) fs.mkdirSync("dist")
+
 fs.writeFileSync(configOutput, JSON.stringify(config, null, 2))
+
 consola.success('sea-config.json generated!')
