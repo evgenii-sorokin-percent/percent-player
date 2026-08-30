@@ -4,12 +4,16 @@
     <img src="./media/logo.webp" alt="Percent player logo" width="200"/>
 </p>
 
+<p align="center">
+
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white&style=for-the-badge)](https://conventionalcommits.org)
 ![TypeScript](https://img.shields.io/badge/TypeScript-7-3178C6?logo=typescript&logoColor=white&style=for-the-badge)
 ![pnpm](https://img.shields.io/badge/pnpm-11.24.0-F69220?logo=pnpm&logoColor=white&style=for-the-badge)
 ![Node.js](https://img.shields.io/badge/Node.js-%3E%3D25.5.0-339933?logo=nodedotjs&logoColor=white&style=for-the-badge)
 ![code style](https://img.shields.io/badge/code%20style-oxfmt-orange?style=for-the-badge)
 ![lint](https://img.shields.io/badge/lint-oxlint-blue?style=for-the-badge)
+</p>
+
 
 An offline music player featuring a WebUI, powered by a local server and packaged as a SEA
 
