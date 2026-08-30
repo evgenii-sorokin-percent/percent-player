@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm -F server dev && pnpm -F client dev",
+    "dev": "pnpm -F server dev & pnpm -F client dev",
     "dev:server": "pnpm -F server dev",
     "dev:client": "pnpm -F client dev",
     "build": "pnpm -F server build && pnpm -F client build && pnpm build:sea-config && pnpm build:sea",
