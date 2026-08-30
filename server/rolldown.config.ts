@@ -8,6 +8,6 @@ export default defineConfig({
     file: "dist/server.js",
     format: "esm",
     minify: true,
-    codeSplitting: false
+    codeSplitting: false,
   },
 });

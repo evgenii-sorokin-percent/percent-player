@@ -4,10 +4,10 @@ import { getAsset, isSea } from "node:sea";
 import path from "path";
 import consola from "consola";
 import { fileURLToPath } from "url";
-import { openBrowser }  from "./utils/index.js";
+import { openBrowser } from "./utils/index.js";
 import getPort from "get-port";
 
-consola.start("Initializing server...")
+consola.start("Initializing server...");
 
 const app = express();
 const isProduction = env.NODE_ENV === "production";
@@ -23,7 +23,7 @@ if (isSea()) {
       if (assetKey.endsWith(".js")) response.type("application/javascript");
       else if (assetKey.endsWith(".css")) response.type("text/css");
       else if (assetKey.endsWith(".svg")) response.type("image/svg+xml");
-      else if (assetKey.endsWith(".png")) response.type("image/png")
+      else if (assetKey.endsWith(".png")) response.type("image/png");
 
       response.send(Buffer.from(data));
     } catch {
@@ -40,15 +40,16 @@ if (isSea()) {
 }
 
 const start = async () => {
-  const avaiblePort = await getPort({port: env.PORT})
+  const avaiblePort = await getPort({ port: env.PORT });
 
-  if (env.PORT !== avaiblePort) consola.warn("The default port was busy. A random free port has been selected")
+  if (env.PORT !== avaiblePort)
+    consola.warn("The default port was busy. A random free port has been selected");
 
   app.listen(avaiblePort, () => {
     consola.success(`Server start on port: http://localhost:${avaiblePort}`);
   });
 
-  openBrowser(`http://localhost:${avaiblePort}`)
-}
+  openBrowser(`http://localhost:${avaiblePort}`);
+};
 
-start()
+start();

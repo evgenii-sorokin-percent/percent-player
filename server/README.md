@@ -2,7 +2,7 @@
 
 Express and SEA server
 
-## Technologies  
+## Technologies
 
 - **Express 5** - Web framework
 - **Zod 4** - Schema validation
@@ -29,7 +29,7 @@ pnpm build # Build
 
 ```bash
 pnpm lint # Lint
-pnpm lint:fix # Lint with fix 
+pnpm lint:fix # Lint with fix
 ```
 
 ### Formatting

@@ -2,7 +2,7 @@
 
 React client
 
-## Technologies  
+## Technologies
 
 - **React 19 / React DOM** - UI library
 - **React Router 8** - SPA routing

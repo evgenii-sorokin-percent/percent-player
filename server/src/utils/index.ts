@@ -1,2 +1,1 @@
-
-export * from "./open-browser.js"
+export * from "./open-browser.js";
