@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/node-sea-config.schema.json",
+  "title": "Node.js SEA configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "main",
+    "output"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "main": {
+      "type": "string",
+      "description": "Path to the entry-point JavaScript file."
+    },
+    "mainFormat": {
+      "type": "string",
+      "enum": [
+        "commonjs",
+        "module"
+      ],
+      "default": "commonjs"
+    },
+    "executable": {
+      "type": "string",
+      "description": "Path to the Node.js executable used as the base."
+    },
+    "output": {
+      "type": "string",
+      "description": "Path to the generated executable or SEA blob."
+    },
+    "disableExperimentalSEAWarning": {
+      "type": "boolean",
+      "default": false
+    },
+    "useSnapshot": {
+      "type": "boolean",
+      "default": false
+    },
+    "useCodeCache": {
+      "type": "boolean",
+      "default": false
+    },
+    "execArgv": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "execArgvExtension": {
+      "type": "string",
+      "enum": [
+        "none",
+        "env",
+        "cli"
+      ],
+      "default": "env"
+    },
+    "assets": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  }
+}
