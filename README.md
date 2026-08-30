@@ -12,7 +12,7 @@ An offline music player featuring a WebUI, powered by a local server and package
 - `server/` - Express Server & SEA ([Documentation](./server/README.md))
 - `client/` - React WebUI ([Documentation](./client/README.md))
 
-## Technologies
+## General Technologies
 
 - **TypeScript 7** - Typing
 - **Oxlint** - Linter
