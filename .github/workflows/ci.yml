@@ -33,7 +33,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 25.5.0
-          cache: npm
+
+      - name: Enable corepack
+        run: corepack enable
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
