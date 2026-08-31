@@ -10,7 +10,7 @@ const NotFound = () => {
   const handleClick = () => navigate("/");
 
   return (
-    <div className={`container flex-centered viewport-full-size ${styles["not-found"]}`}>
+    <div className={`container flex-center  ${styles["not-found"]}`}>
       <h1>{t("translation:notFound.title")}</h1>
       <Button onClick={handleClick}> {t("translation:notFound.backButton")} </Button>
     </div>

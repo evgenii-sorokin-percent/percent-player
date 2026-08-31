@@ -1,4 +1,3 @@
-import style from "./ThemeSwitcher.module.scss";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Classic } from "@theme-toggles/react";
@@ -28,7 +27,7 @@ const ThemeSwitcher = () => {
       aria-label={t("translation:theme.toggle")}
       data-tooltip={t("translation:theme.toggle")}
       data-placement="bottom"
-      className={`contrast outline ${theme} ${style["theme-switcher"]}`}
+      className={`contrast outline flex-center ${theme}`}
       onClick={toggleTheme}
     />
   );
