@@ -5,4 +5,7 @@ export const en: TranslationSchema = {
     title: "Page not found",
     backButton: "Return to main page",
   },
+  theme: {
+    toggle: "Toggle theme",
+  },
 };

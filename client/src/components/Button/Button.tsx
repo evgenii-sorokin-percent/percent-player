@@ -7,10 +7,10 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   outline?: boolean;
 }
 
-const Button = ({ children, view, outline, ...props }: ButtonProps) => {
+const Button = ({ children, view, outline, className, ...props }: ButtonProps) => {
   return (
     <button
-      className={`${outline ? "outline" : ""} ${view ? view : ""} ${props.className || ""}`}
+      className={`${outline ? "outline" : ""} ${view ? view : ""} ${className || ""}`}
       {...props}
     >
       {children}

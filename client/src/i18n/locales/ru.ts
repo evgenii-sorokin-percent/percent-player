@@ -5,4 +5,7 @@ export const ru: TranslationSchema = {
     title: "Страница не найдена",
     backButton: "Вернуться на главную",
   },
+  theme: {
+    toggle: "Сменить тему",
+  },
 };

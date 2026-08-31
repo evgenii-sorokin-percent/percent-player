@@ -3,4 +3,7 @@ export interface TranslationSchema {
     title: string;
     backButton: string;
   };
+  theme: {
+    toggle: string;
+  };
 }
