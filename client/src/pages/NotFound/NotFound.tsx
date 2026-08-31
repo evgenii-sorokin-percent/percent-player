@@ -11,8 +11,8 @@ const NotFound = () => {
 
   return (
     <div className={`container flex-center  ${styles["not-found"]}`}>
-      <h1>{t("translation:notFound.title")}</h1>
-      <Button onClick={handleClick}> {t("translation:notFound.backButton")} </Button>
+      <h1>{t("notFound.title")}</h1>
+      <Button onClick={handleClick}> {t("notFound.backButton")} </Button>
     </div>
   );
 };

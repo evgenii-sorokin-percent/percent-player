@@ -30,11 +30,13 @@ const AppLink = ({ children, view, isNav = false, to, href, ...props }: AppLinkP
     );
   }
 
-  return (
-    <Link className={className} to={to} {...props}>
-      {children}
-    </Link>
-  );
+  if (to) {
+    return (
+      <Link className={className} to={to} {...props}>
+        {children}
+      </Link>
+    );
+  }
 };
 
 export default AppLink;
