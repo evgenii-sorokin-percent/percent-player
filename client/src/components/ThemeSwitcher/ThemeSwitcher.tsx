@@ -27,7 +27,7 @@ const ThemeSwitcher = () => {
       aria-label={t("translation:theme.toggle")}
       data-tooltip={t("translation:theme.toggle")}
       data-placement="bottom"
-      className={`contrast outline flex-center ${theme}`}
+      className={`contrast outline flex-center ${theme} }`}
       onClick={toggleTheme}
     />
   );

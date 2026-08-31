@@ -6,8 +6,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<DefaultLayout />}></Route>
-        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<DefaultLayout />}>
+          <Route path="*" element={<NotFound />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

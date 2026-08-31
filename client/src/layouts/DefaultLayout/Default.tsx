@@ -4,7 +4,7 @@ import ThemeSwitcher from "../../components/ThemeSwitcher/ThemeSwitcher";
 
 const DefaultLayout = () => {
   return (
-    <>
+    <div className="layout-wrapper">
       <Navbar className="container">
         <ul></ul>
         <ul>
@@ -13,8 +13,10 @@ const DefaultLayout = () => {
           </li>
         </ul>
       </Navbar>
-      <Outlet />
-    </>
+      <main className="layout-main">
+        <Outlet />
+      </main>
+    </div>
   );
 };
 
