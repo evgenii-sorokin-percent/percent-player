@@ -1,0 +1,20 @@
+import { useNavigate } from "react-router";
+import styles from "./NotFound.module.scss";
+import { useTranslation } from "react-i18next";
+import Button from "../../components/Button/Button";
+
+const NotFound = () => {
+  const navigate = useNavigate();
+  const { t } = useTranslation();
+
+  const handleClick = () => navigate("/");
+
+  return (
+    <div className={`container flex-centered viewport-full-size ${styles["not-found"]}`}>
+      <h1>{t("translation:notFound.title")}</h1>
+      <Button onClick={handleClick}> {t("translation:notFound.backButton")} </Button>
+    </div>
+  );
+};
+
+export default NotFound;

@@ -1,1 +1,6 @@
-@use "@picocss/pico/scss/pico";
+@use "@picocss/pico/scss/pico" with (
+  $theme-color: "jade"
+);
+
+@use "globals";
+@use "utils";
