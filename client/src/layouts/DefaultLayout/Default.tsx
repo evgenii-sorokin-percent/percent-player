@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar.tsx/Navbar";
 import { Outlet } from "react-router";
 import ThemeSwitcher from "../../components/ThemeSwitcher/ThemeSwitcher";
+import LanguageSwitcher from "../../components/LanguageSwitcher/LanguageSwitcher";
 
 const DefaultLayout = () => {
   return (
@@ -8,6 +9,9 @@ const DefaultLayout = () => {
       <Navbar className="container">
         <ul></ul>
         <ul>
+          <li>
+            <LanguageSwitcher />
+          </li>
           <li>
             <ThemeSwitcher />
           </li>

@@ -2,6 +2,10 @@
   --pico-border-radius: 2rem;
 }
 
+details.dropdown > summary + ul li a {
+  border-radius: var(--pico-border-radius);
+}
+
 .layout-wrapper {
   min-height: 100dvh;
   display: flex;

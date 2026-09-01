@@ -7,13 +7,9 @@
   "disableExperimentalSEAWarning": true,
   "executable": "/usr/bin/node",
   "assets": {
-    "assets/hero-CLDdwZDr.png": "./client/dist/assets/hero-CLDdwZDr.png",
-    "assets/index-D64VDMd1.css": "./client/dist/assets/index-D64VDMd1.css",
-    "assets/index-DaeTyWji.js": "./client/dist/assets/index-DaeTyWji.js",
-    "assets/react-CHdo91hT.svg": "./client/dist/assets/react-CHdo91hT.svg",
-    "assets/vite-BF8QNONU.svg": "./client/dist/assets/vite-BF8QNONU.svg",
+    "assets/index-BIg1jSyu.css": "./client/dist/assets/index-BIg1jSyu.css",
+    "assets/index-jhCVzz5K.js": "./client/dist/assets/index-jhCVzz5K.js",
     "favicon.svg": "./client/dist/favicon.svg",
-    "icons.svg": "./client/dist/icons.svg",
     "index.html": "./client/dist/index.html"
   }
 }
