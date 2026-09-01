@@ -77,3 +77,11 @@ pnpm format:check # Check formatting for entire project
 pnpm format:check:server # Check formatting for server only
 pnpm format:check:client # Check formating for client only
 ```
+
+### Typecheck
+
+```bash
+pnpm typecheck # Check types entire project
+pnpm typecheck:server # Check types server only
+pnpm typecheck:client # Check types client only
+```

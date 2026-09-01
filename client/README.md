@@ -37,3 +37,9 @@ pnpm lint:fix # Lint with fix
 pnpm format # Format
 pnpm format:check # Check formatting
 ```
+
+### Typecheck
+
+```bash
+pnpm typecheck # Check types
+```

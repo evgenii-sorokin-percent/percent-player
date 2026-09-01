@@ -24,6 +24,9 @@
     "format:check": "pnpm -F server format:check && pnpm -F client format:check",
     "format:check:server": "pnpm -F server format:check",
     "format:check:client": "pnpm -F client format:check",
+    "typecheck": "pnpm -F server typecheck && pnpm -F client typecheck",
+    "typecheck:server": "pnpm -F server typecheck",
+    "typecheck:client": "pnpm -F client typecheck",
     "prepare": "husky",
     "commitlint": "commitlint --edit"
   },
